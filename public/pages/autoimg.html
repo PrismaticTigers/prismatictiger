@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Getting the file information</title>
+<style>
+
+
+  #contain {
+    width:600px;
+ 
+  }
+
+    input, textarea {
+        outline:0;
+    }
+        
+       #output {
+            width:360px;
+  overflow-y:scroll;
+  height: 200px;
+  border:1px solid;
+}
+
+input#filepicker, input#myfiles {
+    margin-bottom:15px;
+    border:1px dashed;
+    padding:5px;
+}
+details {
+  display:inline-block;
+  padding:5px;
+  margin-bottom:5px;
+}
+
+p {
+  margin:0;
+  display:inline-block;
+  margin-bottom:10px;
+}
+
+h1, h2, h3, h4, h5 {
+  margin:0;
+  margin-bottom:10px;
+}
+</style>
+</head>
+<body id="inframe">
+
+        <div id="contain" style="margin-bottom:10px;margin:0 auto">
+          <details>
+            <hr>
+            I've tested this with a massive 1,000 files at once, and it had no issue. <br> As far as I'm aware, there aren't any limits, but use your own discretion! :)
+            <summary>File(s) Upload</summary>
+          </details> <br>
+        
+      <input id="myfiles" multiple type="file" /> <br>
+      <details>
+        <hr>
+        Input your image directory here if it has one.<br> Please refer to <a href="https://www.w3schools.com/html/html_filepaths.asp" target="_blank">this</a> if you're confused! <br> However, if it's within the same directory, ignore this input :) <br><br>
+        If ignored, output will show <code>'&lt;img src="image.png" alt="">'</code>
+        <summary>Directory Input</summary>
+      </details> <br>
+      <input type="text" id="myText" autocomplete="off" placeholder="images/dir/">
+      <input type="submit" id="submit" onclick="myFunction();return false">
+      <br><br>
+     <h3>Output</h3>
+    <textarea style="text-align: left;" id="output" onClick="this.select();" placeholder="If there are any bugs, contact me with the email listed on my webmistress page!!"></textarea>
+  </div>
+<script>
+function myFunction(){
+  var x = document.getElementById("myfiles");
+  var txt = "";
+  var dir = document.getElementById("myText").value;
+  if ('submit' ) {
+    if (x.files.length == 0) {
+      txt = "Select one or more files.";
+    } else {
+      for (var i = 0; i < x.files.length; i++) {
+        var file = x.files[i];
+        if ('name' in file) {
+          txt += `&lt;img src=&quot;` + dir + file.name + `&quot; alt=&quot;&quot;>\n`;
+        }
+      }
+    }
+  } 
+  else {
+    if (x.value == "") {
+      txt += "Select one or more files.";
+    } else {
+      txt += "The files property is not supported by your browser!";
+    }
+  }
+  document.getElementById("output").innerHTML = txt;
+}
+</script>
+</script>
+</body>
+</html>

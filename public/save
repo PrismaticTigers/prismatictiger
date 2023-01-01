@@ -1,0 +1,84 @@
+ <h2><img src="silkicons/computer.png" alt=""> Site Related</h2>
+            <a class="navlinks" href="#" onclick="window.location.reload(true);"><img src="silkicons/arrow_refresh_small.png" alt="" style="vertical-align: -5px;">REFRESH</a>
+            <a class="navlinks" href="pages/about.html"><img src="silkicons/report_user.png" alt="" style="vertical-align: -5px;">Webmistress</a>
+            <a class="navlinks" href="pages/credits.html" target="frame"><img src="silkicons/information.png" alt="" style="vertical-align: -5px;">Credits</a>
+            <a class="navlinks" href="pages/linkme.html" target="frame"><img src="silkicons/link_go.png" alt="" style="vertical-align: -5px;">Link Me!</a>
+            <a class="navlinks" href="http://users3.smartgb.com/g/g.php?a=s&i=g36-31590-f8" target="_blank"><img src="silkicons/book_edit.png" alt="" style="vertical-align: -5px;">Guestbook</a>
+
+            <h2><img src="silkicons/page_code.png" alt=""> tools  </h2>
+            <a class="navlinks" href="pages/autoimg.html" target="frame"><img src="silkicons/lightbulb.png" alt="" style="vertical-align: -5px;">Automatic img src</a>
+
+            <h2><img src="silkicons/layout_content.png" alt=""> layouts</h2>
+            <a class="navlinks" href="pages/layouts.html" target="frame"><img src="silkicons/application_side_boxes.png" alt="" style="vertical-align: -5px;">Div Layouts</a>
+            <a class="navlinks" href="pages/n.html" target="frame"><img src="silkicons/layout_error.png" alt="" style="vertical-align: -5px;">404 Pages</a>
+
+            <h2><img src="silkicons/images.png" alt=""> graphics</h2>
+            <a class="navlinks" href="pages/graphics.html" target="frame">Backgrounds</a>
+            
+            <a class="navlinks" href="pages/signs.html" target="frame">Enter Signs</a>
+            <a class="navlinks" href="pages/stamps.html" target="frame">Stamps & Blinkies</a>
+
+
+    
+            
+            <h2><img src="silkicons/world_link.png" alt=""> links out</h2>
+            <a class="navlinks" href="pages/links.html" target="frame"><img src="silkicons/page_world.png" alt="" style="vertical-align: -5px;">Other Websites</a>
+            <a class="navlinks" href="https://aengelis.neocities.org/" target="_blank">Personal Website <img src="images/favicons/new3.gif" alt=""></a>
+            <a class="navlinks" href="https://neocities.org/site/prismatictigers" target="_blank">Neocities Profile</a>
+            <div class="yw-widget-text" data-yw-url="https://prismatictigers.neocities.org/"></div><script src="https://yesterweb.org/js/widget.js"></script>
+
+            
+            
+
+        </div>
+
+        <div style="left:320px; position: absolute; top: 399px; width: 280px; height: 40px">
+            <marquee onmouseover="this.scrollAmount=1" style="width: 280px; height: 40px" onmouseout="this.scrollAmount=2" scrollamount="2" direction="across">
+    
+        <a href="https://sheisl0ved.com/"><img src="/images/buttons/sheisl0ved.png" style="opacity: 0.2; padding: 2px;" onmouseover="this.style.opacity=1;this.filters.alpha.opacity=100" onmouseout="this.style.opacity=0.2;this.filters.alpha.opacity=20"></a>
+        <a href="http://moonstar.sheisl0ved.com/"><img src="/images/buttons/moonstar.png" style="opacity: 0.2; padding: 2px;" onmouseover="this.style.opacity=1;this.filters.alpha.opacity=100" onmouseout="this.style.opacity=0.2;this.filters.alpha.opacity=20"></a>
+
+        <a href="http://sealove.sheisl0ved.com/"><img src="/images/buttons/sealove.png" style="opacity: 0.2; padding: 2px;" onmouseover="this.style.opacity=1;this.filters.alpha.opacity=100" onmouseout="this.style.opacity=0.2;this.filters.alpha.opacity=20"></a>
+
+        <a href="https://plasticdino.neocities.org/"><img src="../images/buttons/plasticdino.gif" style="opacity:0.4;filter:alpha(opacity=20); padding:2px;" onmouseover="this.style.opacity=1;this.filters.alpha.opacity=100" onmouseout="this.style.opacity=0.2;this.filters.alpha.opacity=20"></a>
+
+        <a href="https://dewside.neocities.org/"><img src="/images/buttons/dewside.gif" style="opacity: 0.2; padding: 2px;" onmouseover="this.style.opacity=1;this.filters.alpha.opacity=100" onmouseout="this.style.opacity=0.2;this.filters.alpha.opacity=20"></a>
+
+        </marquee></div>
+        <div id="footer">
+            <br><em>Last Updated: <span id="lastupdate"></span> // You are Visitor #: <span id="hitcount"></span></em>
+                <br>© prism <span id="year"></span> &sdot; all rights reserved<br>
+                images from anime/manga and those alike belong to their respectful creators. <br>
+            powered by <a href="https://neocities.org/" target="_blank">neocities!</a></div>
+                <script>
+                      function copyrightYear(startYear) {
+                const d = new Date();
+                let y = d.getFullYear();
+                const year = document.getElementById("year");
+                year.innerHTML = startYear;
+                if (y != startYear) {
+                  year.innerHTML += " &ndash; " + y;
+                }
+              }
+              copyrightYear(2020); 
+              </script>
+              <script>
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var site_data = JSON.parse(this.responseText);
+                        var num_arr = site_data.info.views.toString().split("");
+                        var num_str = "";
+                        for (i = 0; i < num_arr.length; i++) {
+                            num_str += num_arr[i];
+                            if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+                            var date_str = site_data.info.last_updated;
+                            var date_obj = new Date(site_data.info.last_updated);
+                            document.getElementById("lastupdate").innerHTML = (date_obj.getMonth()+1) + "." + date_obj.getDate() + "." + date_obj.getFullYear();
+                        }
+                        document.getElementById("hitcount").innerHTML = num_str;
+                    }
+                };
+                xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=prismatictigers", true);
+                xhttp.send();
+                </script>

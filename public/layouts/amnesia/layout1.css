@@ -1,0 +1,139 @@
+/* -------------------------------------------------------------------------- */
+/*               AMNESIA LAYOUT BY PRISMATICTIGERS.NEOCITIES.ORG              */
+/* -------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+
+body {
+    text-align: justify;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 9px;
+    color:#333;
+    background:url('images/layout01body.png');
+    background-color: #3a4a63;
+    background-repeat:repeat-y;
+    background-position:left;
+
+}
+
+
+.name::first-letter {
+color:#3a4a63;
+font-size: 24px;
+}
+
+.name {text-decoration: overline dashed #1c293c;
+    border-bottom:dashed 1px;
+    position:absolute;
+    width:200px;
+    top:410px;
+    left:70px;
+    color:#bbbec3;
+    letter-spacing: 5px;
+    font-size:20px;
+    font-family:'Berkshire Swash', cursive;
+}
+
+h1::first-letter {
+    font-family: 'Berkshire Swash', cursive;
+    font-size:20px;
+    color:#1c293c;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+h1 {
+    text-decoration: overline;
+}
+
+
+h1, h2, h3, h4, h5, h6  {
+    font-variant: small-caps;
+    color:#3a4a63;
+    margin:0;
+    letter-spacing: 2px;
+    font-size:12px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h2 {
+    background:#bbbec3;
+    border-bottom:1px dashed;
+}
+
+.subtitle {
+    font-size:9px;
+    letter-spacing: 3px;
+    background:#bbbec3;
+}
+
+p {
+    text-indent: 1.5em;
+    padding:3px;
+    line-height: 1.5em;
+}
+
+#header {
+    pointer-events: none;
+    position:absolute;
+    top:0;
+    left:0;
+    height: 200px;
+    width: 100%;
+}
+
+#content {padding:3px;
+    background: #d1d2d5;
+    position: absolute;
+width: 496px;
+top: 460px;
+left: 58px;
+}
+
+#nav {
+    color:#1c293c;
+    position: absolute;
+    width: 200px;
+    top: 415px;
+    left: 405px;
+    text-align: center;
+  }
+
+  #footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:3px;
+    position:absolute;
+    background:#d1d2d5;
+    width:496px;
+    left: 58px;
+    bottom:50px;
+    text-align:center;
+  }
+
+  a {
+    color:#a09098;
+  }
+
+  a:hover {
+    text-decoration:line-through;
+    color:#3a4a63;
+  }
+
+  .navlinks {
+    outline:none;
+    width:50px;
+    border-left:2px solid;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding:2px 1px;
+    margin:3px;
+    color:#d1d2d5;
+    display:inline-block;
+    background:#1c293c;
+  }
+
+  .navlinks:hover {
+    background:#d1d2d5;
+    color:#1c293c;
+  }

@@ -9,6 +9,12 @@
 /*by YOU*/
 
 
+input :not([name="submit"]), textarea {
+  outline:0;
+  width:100%;
+    box-sizing:border-box;
+}
+
 body {
 box-sizing:border-box;
   font-family:Verdana, Geneva, Tahoma, sans-serif;

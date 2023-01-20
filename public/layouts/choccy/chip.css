@@ -1,0 +1,272 @@
+@import url('win.css');
+
+
+* {cursor: url(https://cur.cursors-4u.net/food/foo-4/foo368.cur), auto;/* End https://www.cursors-4u.com */
+    box-sizing: border-box;
+
+}
+
+:root {
+    --text-color: #000;
+    --yellow:#ffffdd;
+    --spicy:#ff3399;
+      }
+  
+  html, body {
+      background:url('/images/backgrounds/Nakayoshi.(Source).full.32482.jpg');
+      background-size:auto 100%;
+    position:relative;
+    padding:5px;
+    margin:0;
+    font-family: ms ui gothic;
+}
+
+.grid-container {
+    box-shadow:-1px -1px #fff, 1px 1px #fff,inset -1px -1px #fff,2px 2px 6px 2px #000;
+      outline:2px solid #fff;
+      border:1px solid;
+      outline-offset: 3px;
+    display:grid;
+    grid-template-columns:1fr repeat(2, 1.5fr) 1fr;
+    grid-template-rows: auto 3fr repeat(2, 2fr);
+    grid-auto-flow: row dense;
+    gap:10px;
+    max-width:1100px;
+    height:100%;
+    margin-left: auto;
+    padding:10px;
+    isolation: isolate;
+    position:relative;    
+    
+}
+
+.marq {
+    grid-column: 1 / -1;
+}
+
+.marq p {
+    padding:0;
+}
+
+.grid-mid {
+    grid-column:3/ 3;
+    grid-row: 5 / 5;
+    
+ 
+}
+
+.grid-item {
+    padding:5px;
+    background:#ffffccdc;
+    box-shadow:-1px -1px #fff, 1px 1px #fff,inset -1px -1px #fff,4px 5px 2px #888;
+    border:1px solid;
+    border-radius: .5em;
+    outline:2px solid #fff;
+    position:relative;
+}
+
+.header {
+    grid-column: 1 / -1;
+    background:url('/images/backgrounds/wal_digi.jpg');
+    background-position:-115em -35em;
+    background-repeat: no-repeat;
+}
+.grid-left {
+    grid-row: 3 / 8;
+}
+.grid-right {
+    grid-column: 4 / 4;
+    grid-row: 3 / 7;
+}
+
+.lucky {
+    grid-column: 5/4;
+    grid-row:auto;
+}
+
+.main {
+    grid-column:2 /4;
+    grid-row: 3 / 5;
+}
+
+.buttons {
+    grid-row:auto;
+    grid-column: 2 / 4;
+    
+}
+
+.square1, .square2 {
+grid-row: 6 / 6;
+}
+
+.bot {
+grid-column: 2/4;
+grid-row: 7/7;
+}
+
+marquee > img {
+    vertical-align:sub;
+}
+
+.footer {
+    grid-column:1 / -1;
+ 
+    box-shadow:inset 2px 2px rgba(0, 0, 0, 0.418);
+    background-blend-mode: normal, difference, normal;
+  background-size: 2px 2px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), linear-gradient(to right, black 50%, white 50%), linear-gradient(to bottom, black 50%, white 50%);
+  font-weight: bold;
+  padding:10px;
+  text-align:left;
+}
+
+#time {
+    text-align:right;
+}
+
+.grid-container::after {
+    content:"";
+    inset:0;
+    position:absolute;
+    z-index:-1;
+    background:url('/images/backgrounds/chekdb.png');
+    background-size:auto;
+    animation:bg infinite 120s linear;
+}
+
+@keyframes bg {
+    0% {background-position:-100% 50%;}
+    100% {background-position:100% -100%;}
+
+}
+
+p {
+    margin:3px 0;
+    font-size: 12px;
+}
+
+.shake:hover {
+    width:25px;
+
+    animation: shake .25s infinite;
+  }
+
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+}
+
+ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+  }
+
+  li {
+    padding:.2em 0;
+  }
+
+  p, li {
+    padding:10px;
+    margin:0;
+    font-size:12px;
+  }
+
+
+  .nav li img {
+    vertical-align: -.4em;
+  }
+  a {
+    color:blue;
+   text-decoration: underline;
+  }
+
+ .nav a:hover {
+  cursor: url(https://cur.cursors-4u.net/food/foo-4/foo377.cur), pointer;
+  /* End https://www.cursors-4u.com */
+    text-decoration:underline dotted 1px;
+    font-weight: bold;
+  }
+
+  a:active {
+    color:var(--spicy);
+  }
+
+
+  a:focus:after {
+    content:url('/images/favicons/sweets/f559827.gif');
+    vertical-align: -.3em;
+  }
+
+
+.scroll {
+    overflow:auto;
+    max-height:100px;
+}
+
+
+@media (max-width:768px) {
+
+    .header {
+        height:300px;
+    }
+
+    .grid-container {
+       display:block;
+       height:100%;
+    }
+
+    .grid-item {
+        margin:3px 0;
+    }
+
+    .grid-right li {
+        display:inline-block;
+        text-align: center;
+    }
+
+    .grid-right ul {
+        text-align: center;
+    }
+}
+
+@media (max-width:992px) {
+    .main {
+        grid-row:3/5;
+    }
+    .buttons {
+        grid-row:5;
+    }
+    .square1 {
+        grid-row:6;
+        grid-column:2 / 4;
+    }
+
+    .square2 {
+        grid-row:7;
+        grid-column:2/4;
+    }
+
+    .bot {
+        grid-row:8;
+        grid-column: 2/4;
+        }
+    .grid-left {
+        grid-row: 3 / 9;
+    }
+    .grid-right {
+        grid-column: 4;
+        grid-row: 3 / 8;
+    }
+    .lucky {
+        grid-column: 5/4;
+        grid-row:8/9;
+    }
+}

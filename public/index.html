@@ -1,67 +1,147 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="images/favicons/othr/04f8be1f.png" type="image/x-icon">
-    <!--<link rel="stylesheet" type="text/css" href="layout2.css" media="all">-->
-    <link rel="stylesheet" type="text/css" href="index.css" media="all">
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    
-<title>PRISMATICTIGER'S ★ [LAYOUTS]</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prismatictigers 4.0 - Index</title>
+<link rel="stylesheet" href="moe.css" media="all">
+<link rel="shortcut icon" href="/images/favicons/aa3afcf7.gif" type="image/x-icon">
+<script defer src="/time.js"></script>
+<script defer src="away.js"></script>
 </head>
 <body>
+<main class="container">
+<header class="grid header">
+<img src="https://files.catbox.moe/ief06f.gif" alt="">
+</header>
 
-            <div id="grad"></div><div id="graphic"></div>
-<div id="wrapper">
-<main id="main">
-    
-    <a href="https://prismatictigers.neocities.org/main.html">
-        <p><h3>prismatictigers.neocities.org</h3>
-         Continue to my neocities</p><header id="header"></header></a>
-    <a href="https://www.prismatic-realm.net/"><p><h3>prismatic-realm.net</h3>My new personal website which will utilize different scripts, PHP, SQL database, and more in the near future!</p><div id="header2"></div></a>
-    <footer id="footer">
-        <em>Last Updated: <span id="lastupdate"></span> // You are Visitor #: <span id="hitcount"></span></em>
-    <br>© prism <span id="year"></span> &sdot; All rights reserved.<br>
-    Images from anime/manga and those alike belong to their respectful creators. I am merely a fan of it all!<br> Powered by <a href="https://neocities.org/" target="_blank">Neocities!</a>
-    </footer> 
-    </main>  
+<div class="grid flex poke">
+<div class="row">
+<div style="place-self:start;flex:.5;"><h3>CLICK MY POKEMON!</h3></div>
+<div style="flex:1;"><a href="https://r.gpx.plus/JOmTW" target="_blank"><img src="https://i.gpx.plus/JOmTW/s.png" border="0" alt="" /></a><a href="https://r.gpx.plus/QhNgt" target="_blank"><img src="https://i.gpx.plus/QhNgt/s.png" border="0" alt="" /></a><a href="https://r.gpx.plus/rBNgt" target="_blank"><img src="https://i.gpx.plus/rBNgt/s.png" border="0" alt="" /></a><a href="https://r.gpx.plus/MGBLt" target="_blank"><img src="https://i.gpx.plus/MGBLt/s.png" border="0" alt="" /></a><a href="https://r.gpx.plus/HbuLt" target="_blank"><img src="https://i.gpx.plus/HbuLt/s.png" border="0" alt="" /></a><a href="https://r.gpx.plus/aYsLt" target="_blank"><img src="https://i.gpx.plus/aYsLt/s.png" border="0" alt="" /></a></div>
 </div>
-                <script>
-                      function copyrightYear(startYear) {
-                const d = new Date();
-                let y = d.getFullYear();
-                const year = document.getElementById("year");
-                year.innerHTML = startYear;
-                if (y != startYear) {
-                  year.innerHTML += " &ndash; " + y;
-                }
-              }
-              copyrightYear(2020); 
-              </script>
-              <script>
-                var xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        var site_data = JSON.parse(this.responseText);
-                        var num_arr = site_data.info.views.toString().split("");
-                        var num_str = "";
-                        for (i = 0; i < num_arr.length; i++) {
-                            num_str += num_arr[i];
-                            if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
-                            var date_str = site_data.info.last_updated;
-                            var date_obj = new Date(site_data.info.last_updated);
-                            document.getElementById("lastupdate").innerHTML = (date_obj.getMonth()+1) + "." + date_obj.getDate() + "." + date_obj.getFullYear();
-                        }
-                        document.getElementById("hitcount").innerHTML = num_str;
-                    }
-                };
-                xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=prismatictigers", true);
-                xhttp.send();
-                </script>
-   
-</body>
+</div>
+<div class="grid marquee"><marquee behavior="alternate" scrollamount="8">
+New and improved layout! Please mind your step, some things are messy! <img src="/images/favicons/eb0c24a4_original.gif" alt="">
+</marquee></div>
+<div id="sidebar" class="grid sidebar flex">
+<ul>	<h3>navigation</h3>
+    <a href="/">
+<li><img src="/images/favicons/weather/68b4d018.gif" alt=""> Index</li>
+</a>
+<a href="about/abt.html">
+<li><img src="/images/favicons/tumblr_inline_n8k7pebM4a1qbq39l.png" alt=""> About</li>
+</a>
+<a href="#">
+<li><img src="/images/favicons/tumblr_bf9e61c947eb051dbda5d4b1c8b38cc3_620f8753_75.webp" alt=""> Blog</li>
+</a>
+<a href="links/links.html">
+<li><img src="/images/favicons/plantlife/f1707181.gif" alt=""> Links</li>
+</a>
+<a href="graphics/graphics.html">
+<li><img src="/images/favicons/electronics/2a194d98.gif" alt=""> Graphics</li>
+</a>
+<a href="projects/autoimg.html">
+	<li><img src="/images/favicons/othr/4d7d4f50.gif" alt=""> Img Src Generator</li>
+	</a>
+<a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-31590-f8">
+<li><img src="/images/favicons/a6e671c2_original.gif" alt=""> Guestbook</li>
+</a>
+<a href="https://neocities.org/site/prismatictigers">
+	<li><img src="/images/favicons/tumblr_8ce718e140d1984a2eefe8a18bc6bb4c_dc7a556a_75.webp" alt=""> Neocities Profile</li>
+	</a>
+</ul>
+<h1 style="color:#fff;text-shadow:2px 2px #333;font-family:comic sans ms">WHY IS THERE SO MUCH SPACE HERE?</h1>
+<div style="align-self:center;">
+<img src="links/buttons/nerdlistings.gif" alt="" style="object-fit:contain;width:88px;"> <img src="links/buttons/linklane.gif" alt="" style="object-fit:contain;width:88px;"></div>
+</div>
 
+<!-- ---------------------------- KONATA BUN ----------------------------- -->
+
+<div class="grid box flex">
+<img src="/images/backgrounds/9cd7fb6504a855610e77e11d55e42e08.jpg" alt="" style="flex:1;">
+</div>
+
+<!-- ---------------------------- CONTENT MIDDLE ----------------------------- -->
+<div class="grid content flex">
+<div class="midtext">
+<h3>INTRODUCTION</h3>
+<p>Greetings! ( ´ ∀ ` )ﾉ I recently started binging Lucky Star and was inspired to project my interest into a page layout!</p>
+<div class="hr"></div>
+<h3>DISCLAIMER</h3>
+<p>I found all of the graphics used on my page from around the web, <em>EXCEPT</em> for the bunny below and the animated 3D text above. I made those myself! ☆⌒(ゝ。∂) <&mdash; (This of course includes my own artwork within my gallery hehe... WHEN I EVENTUALLY ADD IT...) If you're interested in having something made, shoot me a message!
+</p>
+<h3>WHAT MY SITE OFFERS</h3>
+<p>This is my cozy little anime sanctuary! I have a resources page if you're seeking stuff like that, a blog page where I tend to ramble a lot about things, and my very own art gallery where I mostly dump all of my sketches/concepts/rendered pieces! Some of them were done with my mouse because I was too lazy to whip out my tablet...</p>
+</div>
+<div style="display:flex;flex-direction:column;place-items:end;background:url('graphics/imgs/manga/60be24a48fea49d9df5fa433bf276d8e.png')">
+	<div class="bubble">YES I am going to add a stamps and blinkies page, and the graphics page I had in my previous layout too! All in due time!</div>
+	<img class="bun float" src="https://files.catbox.moe/mdzm38.png" alt="" style="max-width:min-content;">
+	<div id="hehe"><h3 style="color:#333;background:seashell;">catch me if you can!</h3></div>
+</div>
+</div>
+<!-- ---------------------- SCROLLING BOTTOM SECTION ----------------------- -->
+
+<div class="grid daily flex">
+<div class="row">
+	<img class="twirl" src="/images/web/tumblr_a70d9b6824848fa3278ec1af7ec6f048_60a8f3c6_250.webp" alt="">
+	
+	<div class="botscroll">
+			<p style="position:absolute;">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quis ab dolorum deleniti placeat aperiam eaque at magni vero harum excepturi quibusdam, architecto, reprehenderit ipsa? Odio maiores sint suscipit soluta, optio voluptatibus ad. Facilis dicta illum voluptatem debitis? Sit voluptatem tempora dicta reiciendis doloribus. Saepe porro corporis tempora? Sapiente sint quaerat nam mollitia exercitationem, facilis eligendi accusantium, consectetur, molestias debitis at reiciendis dolorum atque dignissimos dicta! Repellendus, porro explicabo. Rem ex voluptatum cum alias ducimus iure voluptatibus maxime hic ad et repellendus porro quia unde earum, tenetur quam reprehenderit placeat nemo delectus voluptas assumenda mollitia totam itaque! Quidem, magnam voluptas.
+			</p>
+	</div>
+</div>
+</div>
+
+<div class="grid right flex">
+
+<img src="/images/backgrounds/1fcf02b89092aebc237934e5fdd1f616.jpg" alt="" style="flex:0;">
+						<div class="scroll">
+<p>
+	<h4>UPDATES</h4>
+	<p><strong>01/30/23</strong> New page layout!</p>
+	<p><strong>12/24/22</strong> YET ANOTHER COMPLETE PAGE REVAMP,
+Added stamps & blinkies pages</p>
+	<p><strong>12/17/22</strong> Added img src tool,
+Removed index from sidenav (refresh does the same thing),
+Added more to the homepage</p>
+	<p><strong>12/10/22</strong> New div layout preview,
+Updated homepage text</p>
+	<p><strong>12/04/22</strong> COMPLETE LAYOUT REVAMP!!,
+Changed literally everything,
+Added more nav links,
+Fixed some links in Other Websites</p>
+	<p><strong>12/02/22</strong> Added a music player to the sidebar,
+Added more links to links out,
+Added more graphics to graphics</p>
+</p>
+					
+</div>
+<h3>affies</h3>
+<marquee behavior="scroll" direction="left" width="100%" height="88px">
+
+	<a href="https://auroraveil.org/"><img src="links/buttons/auroraveil.png" ></a>
+				<a href="https://sheisl0ved.com/"><img src="links/buttons/sheisl0ved.png" ></a>
+				 <a href="http://moonstar.sheisl0ved.com/"><img src="links/buttons/moonstar.png" ></a>
+	
+				 <a href="http://sealove.sheisl0ved.com/"><img src="links/buttons/sealove.png" ></a>
+	
+				 <a href="https://plasticdino.neocities.org/"><img src="links/buttons/plasticdino.gif" ></a>
+	
+				 <a href="https://dewside.neocities.org/"><img src="links/buttons/dewside.gif" ></a>
+
+</marquee>
+<img src="/images/web/Konata_Izumi_Character_Song.webp" alt="" >
+
+
+</div>
+
+
+<footer class="grid footer flex">
+<div class="row" style="place-content:space-between;"><div>© Prism 2023 — All Rights Reserved.</div> <div id="time"></div></div>
+
+</footer>
+</main>
+</body>
 </html>

@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+  
+  }
+  
+    body {
+      cursor: url(https://cur.cursors-4u.net/smilies/smi-3/smi266.ani), url(https://cur.cursors-4u.net/smilies/smi-3/smi266.png), default; /* End https://www.cursors-4u.com */
+        background:url('https://neo-himeism.net/wordpress_v2/wp-content/uploads/2021/07/water070.jpg');
+        background-size:1920px;
+      position:relative;
+      color:#333;
+      font-family: ms ui gothic;
+      margin:3px;
+  }
+
+li {
+  list-style-type:none;
+  margin-bottom:18px;
+}
+
+
+.bookmarks {
+  border:1px solid;
+  margin-top:20px;
+  padding:10px;
+  max-height:500px;
+    overflow:auto;
+}
+.bookmarks h3 {
+  background:lavender;
+}
+
+  h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+    margin-block:5px;
+    letter-spacing: 2px;
+    background:rgb(255, 157, 234);
+}
+::selection {
+    text-shadow:1px 0px #000;
+    background:rgb(255, 157, 234);
+}
+
+  p {
+    letter-spacing: 1px;
+    margin:5px;
+    line-height: 1.5em;
+}
+
+  .container {
+    position:relative;
+    display: grid;
+    grid-template-columns:.3fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    max-width:1100px;
+    margin-inline:auto;
+    margin-top: 5px;
+    min-width:630px;
+    
+  }
+
+  .grid {
+    background:url('src/flors.png');
+    padding: 5px;
+    position:relative;
+    border:1px solid #fff;
+    outline:1px solid #fff;
+    outline-offset: -3px;
+    box-shadow:2px 2px 1px #9b949e,inset 1px 1px 0 rgb(0, 0, 0);
+  }
+
+
+  .footer {
+    background:url('src/tumblr_a708b3760de5d414e9cdbad5197f9cdb_521bf743_2048.jpg');
+    background-size:100%;
+    font-weight:bold;
+    color:#fff;
+    text-shadow: 2px 1px #888;
+    background-position: center;
+    grid-column: 1/-1;
+  }
+
+  .nav::after {
+    color:#373737;
+    content: "BACK TO HOME";
+    position:absolute;
+    top:4em;
+    left:1em;
+    background:rgba(255, 245, 238, 0.863);
+    font-size: 16pt;
+    font-weight: bold;
+    white-space: nowrap;
+    text-shadow:2px 0 #fff, 0 2px #fff, -2px 0 #fff, 0 -2px #fff ,3px 2px 2px #aaa;  
+}
+
+.nav {
+  position:relative;
+}
+
+
+  .flex {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .row {
+    display:flex;
+    flex-direction: row;
+    flex:1;
+  }
+
+  img {
+  max-height: 100%;
+  max-width:100%;
+  width:min-content;
+  }
+
+  ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+  }
+
+  li {
+    padding:.2em 0;
+  }
+
+  a {
+    position:relative;
+    font-weight:bold;
+   text-decoration: none;
+    cursor: url(https://cur.cursors-4u.net/smilies/smi-3/smi267.ani), url(https://cur.cursors-4u.net/smilies/smi-3/smi267.png), pointer; /* End https://www.cursors-4u.com */
+  }
+
+
+  a:active {
+    color:hotpink;
+  }
+
+    /* win98 scrollbar */
+
+::-webkit-scrollbar {
+    width: 16px;
+    background: red;
+  }
+  ::-webkit-scrollbar-corner {
+    background: #c0c0c0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #373737;
+    border-top-color: #c0c0c0;
+    border-left-color: #c0c0c0;
+    box-shadow: inset 1px 1px #fff, inset -1px -1px #888;
+  }
+  ::-webkit-scrollbar-track {
+    background-blend-mode: normal, difference, normal;
+    background-size: 2px 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), linear-gradient(to right, black 50%, white 50%), linear-gradient(to bottom, black 50%, white 50%);
+  }
+  ::-webkit-scrollbar-button {
+    background-color: #c0c0c0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #373737;
+    border-top-color: #c0c0c0;
+    border-left-color: #c0c0c0;
+    box-shadow: inset 1px 1px #fff, inset -1px -1px #888;
+  }
+  ::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px;
+  }
+  ::-webkit-scrollbar-button:start:decrement:active, ::-webkit-scrollbar-button:end:increment:active {
+    border: 1px solid #888;
+    box-shadow: none;
+    background-position: 3.2px 3.2px;
+  }
+  ::-webkit-scrollbar-button:start:decrement:horizontal:decrement, ::-webkit-scrollbar-button:end:increment:horizontal:decrement {
+    background-image: url("data:image/svg+xml,%3Csvg transform='rotate(180)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6.86 6.86'%3E%3Cpath fill='%231d1d1b' d='M4.41 2.94v-.98h-.98V.98h-.98V0h-.98V6.86h.98v-.98h.98V4.9h.98v-.98h.98v-.98h-.98z'/%3E%3C/svg%3E");
+  }
+  ::-webkit-scrollbar-button:start:decrement:horizontal:increment, ::-webkit-scrollbar-button:end:increment:horizontal:increment {
+    background-image: url("data:image/svg+xml,%3Csvg transform='rotate(0)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6.86 6.86'%3E%3Cpath fill='%231d1d1b' d='M4.41 2.94v-.98h-.98V.98h-.98V0h-.98V6.86h.98v-.98h.98V4.9h.98v-.98h.98v-.98h-.98z'/%3E%3C/svg%3E");
+  }
+  ::-webkit-scrollbar-button:start:decrement:vertical:decrement, ::-webkit-scrollbar-button:end:increment:vertical:decrement {
+    background-image: url("data:image/svg+xml,%3Csvg transform='rotate(270)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6.86 6.86'%3E%3Cpath fill='%231d1d1b' d='M4.41 2.94v-.98h-.98V.98h-.98V0h-.98V6.86h.98v-.98h.98V4.9h.98v-.98h.98v-.98h-.98z'/%3E%3C/svg%3E");
+  }
+  ::-webkit-scrollbar-button:start:decrement:vertical:increment, ::-webkit-scrollbar-button:end:increment:vertical:increment {
+    background-image: url("data:image/svg+xml,%3Csvg transform='rotate(90)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6.86 6.86'%3E%3Cpath fill='%231d1d1b' d='M4.41 2.94v-.98h-.98V.98h-.98V0h-.98V6.86h.98v-.98h.98V4.9h.98v-.98h.98v-.98h-.98z'/%3E%3C/svg%3E");
+  }
+
+  @media screen and (max-width:675px) {
+
+    
+  
+
+    .container {
+        
+        display:flex;
+        flex-direction: column;
+        min-width:auto;
+        margin-top:0;
+    }
+  }

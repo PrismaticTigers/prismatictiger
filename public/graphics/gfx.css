@@ -70,7 +70,7 @@ button {
   height: 200px;
   width: 200px;
   object-fit: cover;
-  transition: transform 0.1s ease;
+  transition: transform 100ms ease;
 }
 
 .zines img:hover,

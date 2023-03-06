@@ -47,7 +47,7 @@ h6 {
 }
 
 ::selection {
-  text-shadow: 1px 0px #000;
+  text-shadow: none;
   background: rgb(255, 157, 234);
 }
 

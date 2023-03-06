@@ -143,10 +143,6 @@ h6 {
 }
 
 
-p,
-a {
-  font-size: 12pt;
-}
 
 .para {
   text-indent: .5in;
@@ -154,7 +150,7 @@ a {
 
 p {
   margin: 5px;
-  line-height: 1.6rem;
+  line-height: 1.7rem;
 }
 
 ul {
@@ -171,8 +167,9 @@ li {
 a {
   text-decoration: none;
   color: blue;
-  cursor: url(https://cur.cursors-4u.net/food/foo-4/foo377.cur), pointer !important;
+  cursor: url(https://cur.cursors-4u.net/food/foo-4/foo377.cur), pointer;
 }
+
 
 a:active {
   color: hotpink;
@@ -187,11 +184,17 @@ a:active {
 .sidebar a li {
   border: 1px solid;
   border-radius: .5em;
-  display: block;
+  display: flex;
+  align-items: center;
   margin: 3px 5px;
   padding: 2px;
   background: skyblue;
   font-weight: bold;
+}
+
+.sidebar a li img {
+  margin-right: auto;
+  height: 100%;
 }
 
 @media screen and (min-width:900px) {
@@ -202,9 +205,6 @@ a:active {
     background: lightsteelblue;
   }
 
-  .sidebar li img {
-    vertical-align: -.3em;
-  }
 
 }
 
@@ -569,12 +569,10 @@ a:active {
     position: relative;
     display: flex;
     justify-content: flex-start;
-    padding: 15px 20px;
-    font-size: 1.3rem;
-  }
-
-  .sidebar a img {
-    margin-right: 1rem;
+    align-items: center;
+    margin-block: .5rem;
+    padding: 5px 20px;
+    font-size: 1.1rem;
   }
 
 

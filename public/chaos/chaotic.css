@@ -1,0 +1,91 @@
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+html {
+  cursor: url(https://cur.cursors-4u.net/food/foo-4/foo368.cur), default;
+}
+
+body {
+  background: #16161d;
+  background-position: 0 0;
+  color: #16161D;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 1px;
+  overflow-x: hidden;
+  color: #aaaa9a;
+}
+
+/* --------- TOOLS -------- */
+
+span.list-title {
+  font-weight: bold;
+}
+
+ul.tool-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+ul.tool-list li {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  margin-block: 1rem;
+}
+
+/* ----- CONTENT STUFF ---- */
+
+p {
+  line-height: 1.6rem;
+}
+
+/* --------- GRID --------- */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  gap: .3rem;
+}
+
+.flex {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+.content {
+  flex: 66%
+}
+
+.sidebar {
+  flex: 22%;
+}
+
+.box {
+  padding: .5rem;
+  border: 1px dotted white;
+}
+
+header,
+footer {
+  grid-column: 1/-1;
+}
+
+@media screen and (max-width:1000px) {
+
+  .content,
+  .sidebar {
+    flex: 100%;
+  }
+
+}

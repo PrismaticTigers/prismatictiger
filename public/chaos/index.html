@@ -1,77 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Safespace</title>
+    <link rel="stylesheet" href="chaotic.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Safespace</title>
-  <link rel="stylesheet" href="chaotic.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-</head>
+  <body>
+    <div class="grid-container">
+      <header class="box header"></header>
+      <main class="box main">
+        <div class="flex">
+          <div class="box content">
+            <h1>Gallery</h1>
+            <span class="subtitle">Gallery information</span>
 
-<body>
-  <div class="grid-container">
-    <header class="box header"></header>
-    <main class="box main">
-      <div class="flex">
-        <div class="box content">
-          <h1>Gallery</h1>
-          <span class="subtitle">Gallery information</span>
-
-          <div class="artwork">
             <br />
             <p>I see you've come to take a little peek :&rbrack;</p>
+
+            <div id="artwork"></div>
+          </div>
+          <div class="box sidebar">
+            <h2 class="side">Information</h2>
+            <span class="subtitle">Lorem ipsum dolor sit amet.</span>
+            <div class="tools">
+              <h3>Tools</h3>
+              <ul class="tool-list">
+                <span class="list-title">Digital Art</span>
+                <li>
+                  <span class="list-icon">
+                    <img src="../images/favicons/othr/5ea3af64.gif" alt=""
+                  /></span>
+                  <span class="tool">Clip Studio Paint</span>
+                </li>
+                <li>
+                  <span class="list-icon">
+                    <img src="../images/favicons/othr/5ea3af64.gif" alt=""
+                  /></span>
+                  <span class="tool">Adobe Photoshop</span>
+                </li>
+                <li>
+                  <span class="list-icon">
+                    <img src="../images/favicons/othr/6761dde2.gif" alt=""
+                  /></span>
+                  <span class="tool">XP-PEN Artist 22R Pro</span>
+                </li>
+                <span class="list-title">Traditional Art</span>
+                <li>
+                  <span class="list-icon">
+                    <img src="../images/favicons/othr/6761dde2.gif" alt=""
+                  /></span>
+                  <span class="tool">Precise V5 RT Pen</span>
+                </li>
+                <li>
+                  <span class="list-icon">
+                    <img src="../images/favicons/othr/6761dde2.gif" alt=""
+                  /></span>
+                  <span class="tool">General's Sketch & Wash Pencil</span>
+                </li>
+                <li>
+                  <span class="list-icon">
+                    <img src="../images/favicons/othr/6761dde2.gif" alt=""
+                  /></span>
+                  <span class="tool">Mechanical Pencils</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="box sidebar">
-          <h2 class="side">Information</h2>
-          <span class="subtitle">Lorem ipsum dolor sit amet.</span>
-          <div class="tools">
-            <h3>Tools</h3>
-            <ul class="tool-list">
-              <span class="list-title">Digital Art</span>
-              <li>
-                <span class="list-icon">
-                  <img src="../images/favicons/othr/5ea3af64.gif" alt=""></span>
-                <span class="tool">Clip Studio Paint</span>
-              </li>
-              <li>
-                <span class="list-icon">
-                  <img src="../images/favicons/othr/5ea3af64.gif" alt=""></span>
-                <span class="tool">Adobe Photoshop</span>
-              </li>
-              <li>
-                <span class="list-icon">
-                  <img src="../images/favicons/othr/6761dde2.gif" alt=""></span>
-                <span class="tool">XP-PEN Artist 22R Pro</span>
-              </li>
-              <span class="list-title">Traditional Art</span>
-              <li>
-                <span class="list-icon">
-                  <img src="../images/favicons/othr/6761dde2.gif" alt=""></span>
-                <span class="tool">Precise V5 RT Pen</span>
-              </li>
-              <li>
-                <span class="list-icon">
-                  <img src="../images/favicons/othr/6761dde2.gif" alt=""></span>
-                <span class="tool">General's Sketch & Wash Pencil</span>
-              </li>
-              <li>
-                <span class="list-icon">
-                  <img src="../images/favicons/othr/6761dde2.gif" alt=""></span>
-                <span class="tool">Mechanical Pencils</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </main>
+      </main>
 
-    <footer class="box footer">
-      <p>Copyright &copy; Prism. 2020-2023, all rights reserved.</p>
-    </footer>
-  </div>
-</body>
-
+      <footer class="box footer">
+        <p>Copyright &copy; Prism. 2020-2023, all rights reserved.</p>
+      </footer>
+    </div>
+    <script src="art.js"></script>
+  </body>
 </html>

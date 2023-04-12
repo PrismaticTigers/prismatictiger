@@ -1,0 +1,47 @@
+{
+  "name": "prismatictiger",
+  "version": "1.0.0",
+  "description": "My neocities website https://prismatictigers.neocities.org/ deploy files! Feel free to look around and take inspiration! ^__^",
+  "keywords": [],
+  "homepage": "https://github.com/PrismaticTigers/prismatictiger#readme",
+  "bugs": {
+    "url": "https://github.com/PrismaticTigers/prismatictiger/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrismaticTigers/prismatictiger.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf _site",
+    "sort": "sort-package-json",
+    "start": "npm-run-all clean --parallel dev:*",
+    "build": "npm-run-all build:*",
+    "dev:11ty": "cross-env ELEVENTY_ENV=dev eleventy --serve --incremental",
+    "dev:css": "npx tailwindcss -i src/assets/css/tailwind.css -o _site/css/tailwind.css --watch --postcss",
+    "build:css": "npx tailwindcss -i src/assets/css/tailwind.css -o _site/css/tailwind.css --postcss",
+    "build:11ty": "cross-env ELEVENTY_ENV=prod npx eleventy",
+    "sort-package-json": "sort-package-json"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-img": "^3.1.0",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "autoprefixer": "^10.4.14",
+    "cross-env": "^7.0.3",
+    "luxon": "^3.3.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7",
+    "require-dir": "^1.2.0",
+    "rimraf": "^4.4.0",
+    "sass": "^1.59.3",
+    "sort-package-json": "^2.4.1",
+    "tailwindcss": "^3.3.1"
+  }
+}

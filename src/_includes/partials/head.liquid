@@ -1,0 +1,11 @@
+{% favicon 'src/assets/imgs/thought.png' %}
+{% include './head/common.liquid' %}
+{% include './head/fonts.liquid' %}
+<title>
+  {% assign site = siteConfig.site %}
+  {% if title %}
+    {{ site.title }} - {{ title }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
+</title>

@@ -17,22 +17,29 @@
   "scripts": {
     "clean": "rimraf _site",
     "sort": "sort-package-json",
-    "start": "npm-run-all clean --parallel dev:*",
+    "start": "npm-run-all --parallel dev:*",
     "build": "npm-run-all build:*",
-    "dev:11ty": "cross-env ELEVENTY_ENV=dev eleventy --serve --incremental",
-    "dev:css": "npx tailwindcss -i src/assets/css/tailwind.css -o _site/css/tailwind.css --watch --postcss",
-    "build:css": "npx tailwindcss -i src/assets/css/tailwind.css -o _site/css/tailwind.css --postcss",
+    "dev:11ty": "cross-env ELEVENTY_ENV=dev eleventy --serve --quiet",
+    "dev:css": "npx tailwindcss -i src/assets/css/tailwind.css -o public/css/tailwind.css --watch --postcss",
+    "build:css": "npx tailwindcss -i src/assets/css/tailwind.css -o public/css/tailwind.css --postcss",
     "build:11ty": "cross-env ELEVENTY_ENV=prod npx eleventy",
     "sort-package-json": "sort-package-json"
   },
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "@grimlink/eleventy-plugin-lucide-icons": "^1.0.0",
+    "fast-glob": "^3.2.12",
+    "lodash": "^4.17.21",
+    "tw-elements": "^1.0.0-beta2"
   },
   "devDependencies": {
     "@11ty/eleventy-img": "^3.1.0",
     "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",
+    "eleventy-plugin-svg-contents": "^0.7.0",
     "luxon": "^3.3.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.21",

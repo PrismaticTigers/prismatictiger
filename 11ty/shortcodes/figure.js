@@ -3,16 +3,17 @@ const moduleName = require("../helpers/moduleName");
 const path = require("path");
 
 const sharedImageMetadata = {
-  outputDir: "_site/assets/imgs",
-  urlPath: "/assets/imgs",
+  outputDir: "public/assets/images",
+  urlPath: "/assets/images",
 };
 
 const body = async function (
   src,
   alt,
+  Class,
   caption,
-  imageClass,
-  captionClass,
+  imageClass = [],
+  captionClass = [],
   attrs = {},
   widths = [100, 400, 800, 1280],
   formats = ["webp", "jpeg"],
@@ -33,6 +34,7 @@ const body = async function (
 
   let imageAttributes = {
     alt,
+    Class,
     sizes,
     loading: "lazy",
     decoding: "async",
@@ -40,7 +42,7 @@ const body = async function (
   };
 
   function wrapFigure(output, caption) {
-    return `<figure class="image ${imageClass}">${output}<figcaption class="${captionClass}">${caption}</figcaption></figure>`;
+    return `<figure class="${imageClass}">${output}<figcaption class="${captionClass}">${caption}</figcaption></figure>`;
   }
 
   const pictureOutput = Image.generateHTML(metadata, imageAttributes);

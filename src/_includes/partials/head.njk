@@ -1,0 +1,12 @@
+{# {% favicon 'src/assets/imgs/thought.png' %} #}
+{% include './head/common.njk' %}
+{% include './head/fonts.njk' %}
+{% favicon 'src/assets/favicon/birthday-cake.svg' %}
+<title>
+  {% set site = siteConfig.site %}
+  {% if title %}
+    {{ site.title }} - {{ title }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
+</title>

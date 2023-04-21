@@ -1,0 +1,39 @@
+---
+scripts:
+  - /scripts/tw-elements.es.min.js
+stylesheets:
+  - https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css
+  - /css/tailwind.css
+eleventyComputed:
+  eleventyNavigation:
+    parent: "{{ parent }}"
+    key: "{{ title }}"
+    order: "{{ order }}"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'partials/head.njk' %}
+    {%- for href in stylesheets -%}
+      <link rel="stylesheet" href="{{ href | url }}">
+    {% endfor %}
+    
+  </head>
+  <body class="font-mono bg-fixed bg-check">
+<div class=" max-w-[84rem] border-r border-r-black">
+      {% include 'partials/header.njk' %}
+</div>
+    <div class="flex bg-main lg:flex max-w-[84rem] border-r-black border-r">
+    {% include "partials/sidebar/sidenav.njk" %}
+
+      <main class="min-h-screen px-4 py-12 mx-auto prose prose-lg max-w-none lg:w-3/4 lg:prose-xl bg-notebook ">
+        
+      {{ content | safe }}
+    </main>
+    </div>
+    {% include 'partials/footer.njk' %}
+ <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+  </body>
+</html>

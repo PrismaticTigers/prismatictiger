@@ -5,6 +5,7 @@ const dir = {
   includes: "_includes",
   layouts: "_includes/layouts",
   data: "_data",
+  scripts: "assets/scripts"
 };
 
 module.exports = dir;

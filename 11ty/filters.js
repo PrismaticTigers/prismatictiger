@@ -3,7 +3,7 @@ const { DateTime } = require( 'luxon' );
 const excerpt = (post) => {
 const content = post.replace(/(<([^>]+)>)/gi, "");
 return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
-}
+};
 
 const htmlDateString = ( dateObj ) => {
   // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
@@ -14,7 +14,7 @@ const readableDate = ( dateObj, format, zone ) => {
   // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
   return DateTime.fromJSDate( dateObj, { zone: zone || 'utc' } ).toFormat(
     format || 'dd LLLL yyyy' );
-}
+};
 
 
 const min = (...numbers) => {
@@ -29,16 +29,24 @@ const min = (...numbers) => {
     return Array.from(tagSet);
   };
 
-  const filterTagList = (tags) => {
+  const filterTags = (tags) => {
     return (tags || []).filter(
-      (tag) => ['all', 'pages', 'post', 'posts'].indexOf(tag) === -1
+      (tag) => ['all', 'codes', 'pages', 'post', 'posts'].indexOf(tag) === -1
     );
-  };
+  }
+
+  const hasTag = (tags, tag) => {
+    return (tags || []).includes(tag);
+  }
+  const unique = (arr=[]) => [...new Set(arr)];
+
 module.exports = {
   readableDate,
   htmlDateString,
   excerpt,
   getAllTags,
   min,
-  filterTagList
+  filterTags,
+  hasTag,
+  unique
 };

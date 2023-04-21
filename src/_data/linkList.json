@@ -1,0 +1,43 @@
+[
+  {
+    "weburl": "http://www.minitokyo.net/",
+    "webname": "Minitokyo",
+    "tags": [
+      "images"
+    ]
+  },
+  {
+    "weburl": "https://delim.co/",
+    "webname": "Delim",
+    "tags": [
+      "utils"
+    ]
+  },
+  {
+    "weburl": "https://jqueryui.com/draggable/#handle",
+    "webname": "jQueryUI",
+    "tags": [
+      "javascript",
+      "jquery",
+      "codes"
+    ]
+  },
+  {
+    "weburl": "https://www.hscripts.com/index.php",
+    "webname": "Hscripts",
+    "tags": [
+      "html",
+      "css",
+      "codes"
+    ]
+  },
+  {
+    "weburl": "https://www.encodedna.com/",
+    "webname": "Encodedna",
+    "tags": [
+      "javascript",
+      "jquery",
+      "codes"
+    ]
+  }
+]

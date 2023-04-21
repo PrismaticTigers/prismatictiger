@@ -1,0 +1,10 @@
+
+  <h1>Update Log</h1>
+  <ol reversed class="list-decimalZero">
+    {% for item in updateLog %}
+      <div class="px-4 py-3 mt-3">
+        <li><span class="font-semibold">Update: {{ item.logdate }}</span> <p>{{ item.log }}</p>
+        </li>
+      </div>
+    {% endfor %}
+  </ol>

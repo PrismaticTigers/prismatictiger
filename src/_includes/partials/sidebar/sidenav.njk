@@ -1,0 +1,84 @@
+{# <nav class="px-6 py-6 bg-gray-800 lg:hidden">
+  <div class="flex items-center justify-between">
+    <a class="text-2xl font-semibold text-white" href="#">
+      <img class="h-10" src="artemis-assets/logos/artemis-logo.svg" alt="" width="auto">
+    </a>
+    <button class="flex flex-no-wrap items-center rounded navbar-burger focus:outline-none">
+      <svg class="block w-8 h-8 p-2 text-white bg-indigo-500 rounded hover:bg-indigo-600" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+      </svg>
+    </button>
+  </div>
+</nav> #}
+
+<div class="hidden border-blue-400 outline-none border-x-4 lg:block bg-grid">
+  <nav class="flex flex-col h-screen lg:mb-[25.625rem] pt-6 pb-8  sm:max-w-xs">
+    {# <div class="flex items-center w-full px-6 pb-6 mb-6 border-gray-700 lg:border-b">
+      <a class="text-xl font-semibold text-white" href="#">
+        <img class="h-8" src="artemis-assets/logos/artemis-logo.svg" alt="" width="auto">
+      </a>
+    </div> #}
+    <div class="px-4 pb-6">
+      <h3 class="mb-2 font-bold text-gray-800 uppercase sm:text-lg">Main</h3>
+      <ul class="mb-8 font-semibold sm:text-lg">
+        {% set navPages = collections.pages %}
+        {% for item in navPages %}
+          <li class="mt-2">
+            <a class="flex items-center py-1 pl-3 pr-4 {% if item.url == page.url %}
+            stroke-white fill-white
+            bg-rainbow bg-blend-multiply
+              bg-neutral-800/80 text-white ring-1 ring-red-500 {% else %} bg-rainbow bg-blend-multiply  text-gray-800 hover:bg-gray-800/50 stroke-neutral-100 hover:text-white  hover:fill-neutral-100
+            {% endif %}" href="{{ item.url }}">
+              <span class="inline-block w-6 mr-3">
+                {% if item.data.icon %}
+                    {% svg item.data.icon %}
+                {% endif %}
+              </span>
+              <span>{{ item.data.title }}</span>
+              <span class="inline-block ml-auto animate-bounce">
+                {% if item.data.updated %}
+                    new
+                {% endif %}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <h3 class="mb-2 font-bold text-gray-800 uppercase sm:text-lg">miscellaneous</h3>
+      
+      <ul class="font-semibold sm:text-lg">
+        <li class="mt-2">
+          <a class="flex items-center py-1 pl-3 pr-4 text-gray-800 bg-rainbow bg-blend-multiply hover:bg-gray-800/50 stroke-neutral-100 hover:text-white hover:fill-neutral-100 " href="http://users3.smartgb.com/g/g.php?a=s&i=g36-31590-f8" target="_blank">
+            <span class="inline-block w-5 mr-3">{% svg 'external' %}</span>
+            <span>Guestbook</span>
+          </a>
+        </li>
+        <li class="mt-2">
+          <a class="flex items-center py-1 pl-3 pr-4 text-gray-800 bg-rainbow bg-blend-multiply hover:bg-gray-800/50 stroke-neutral-100 hover:text-white hover:fill-neutral-100 "  href="https://neocities.org/site/prismatictigers" target="_blank">
+            <span class="inline-block w-5 mr-3">{% svg 'external' %}</span>
+            <span>Neocities Profile</span>
+          </a>
+        </li>
+      </ul>
+    
+    </div>
+    <div class="p-10 ">
+      {% include "partials/gpx.njk" %}
+      <div class="mt-5" id="selfinsertwebringvertical">
+        <script src="https://koinuko.neocities.org/shipping/webring/webringverticalscript.js"></script>
+
+        <body onload="setListNumber(), selfInsertWebringLoad()" />
+
+        <!--IN THE SECTION BELOW, PLEASE CHANGE THE 0 (ZERO) TO WHATEVER-->
+
+        <!--NUMBER YOU WERE ASSIGNED! THANK YOU!  <3-->
+
+        <script defer>
+          function setListNumber() {
+            positionInList = 255;
+          }
+        </script>
+      </div>
+    </div>
+</nav>
+  </div>

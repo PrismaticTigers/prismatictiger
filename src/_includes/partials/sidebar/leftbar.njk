@@ -1,0 +1,20 @@
+<div class="hidden border-2 border-x-2 lg:block bg-grid ring ring-inset">
+  <nav class="flex flex-col h-screen lg:mb-[25.625rem] pt-6 pb-8 w-72 ">
+     <div class="px-4 pb-6">
+      <h3 class="mb-2 font-bold text-gray-800 uppercase lg:text-2xl">Main</h3>
+      <ul class="mb-8 font-semibold sm:text-lg">
+        {% set navPages = collections.pages %}
+        {% for item in navPages %}
+        
+          <li class="mt-2"><a class="flex items-start" href="{{item.url}}">
+            <span class="inline-block w-6 mr-3">
+                {% if item.data.icon %}
+                    {% svg item.data.icon %}
+                {% endif %}
+              </span>
+            <span>{{item.data.title}}</span></a></li>
+        {% endfor %}
+        </ul>
+        </div>
+    </nav>
+    </div>

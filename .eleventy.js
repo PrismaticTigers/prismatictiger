@@ -1,17 +1,25 @@
 const { collections, plugins, filters, shortcodes } = require("./11ty");
-
+const {coolify, getSvgContent} = require("./11ty/shortcodes/coolify")
 const dir = require("./11ty/constants/dir");
 
-const TEMPLATE_ENGINE = "liquid";
+const TEMPLATE_ENGINE = "njk";
 
 module.exports = function (eleventyConfig) {
+
+  eleventyConfig.addShortcode('svg', getSvgContent);
+
+
   // --- Watch targets
 
-  eleventyConfig.addWatchTarget(`./src/assets/scss/`);
+  eleventyConfig.addWatchTarget(`./src/assets/css/`);
 
   // --- Passthrough copies
 
-  // eleventyConfig.addPassthroughCopy("./src/assets/imgs");
+  eleventyConfig.addPassthroughCopy("./src/assets/images/backgrounds");
+  eleventyConfig.addPassthroughCopy("./src/assets/frontpage");
+  eleventyConfig.addPassthroughCopy({"./src/assets/favicon": "/"});
+  eleventyConfig.addPassthroughCopy({"./src/assets/svgs": "assets/svgs"});
+  eleventyConfig.addPassthroughCopy({"./src/scripts": "scripts"});
 
   // --- Collections
 
@@ -50,6 +58,6 @@ module.exports = function (eleventyConfig) {
     dataTemplateEngine: TEMPLATE_ENGINE,
     markdownTemplateEngine: TEMPLATE_ENGINE,
     htmlTemplateEngine: TEMPLATE_ENGINE,
-    templateFormats: ["njk", "md", TEMPLATE_ENGINE],
+    templateFormats: ["html", "md", TEMPLATE_ENGINE],
   };
 };

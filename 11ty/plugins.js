@@ -2,7 +2,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const svgContents = require("eleventy-plugin-svg-contents");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const lucideIcons = require("@grimlink/eleventy-plugin-lucide-icons");
-const eleventyPluginFeathericons = require('eleventy-plugin-feathericons');
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 const plugins = [
   {
@@ -15,9 +15,11 @@ const plugins = [
     body: EleventyRenderPlugin,
   },
   {
+    body: syntaxHighlight,
+  },
+  {
     body: lucideIcons, 
     options: {
-      "class": "custom-class",
       "xmlns": "http://www.w3.org/2000/svg",
       "width": 24,
       "height": 24,
@@ -28,9 +30,6 @@ const plugins = [
       "stroke-linecap": "round",
       "stroke-linejoin": "round"
     }
-  },
-  {
-    body: eleventyPluginFeathericons,
   },
 ];
 

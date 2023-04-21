@@ -1,18 +1,16 @@
 const Image = require("@11ty/eleventy-img");
 const moduleName = require("../helpers/moduleName");
 const siteConfig = require("../../src/_data/siteConfig");
+const { imagePaths, imageUrlPath } = require('../constants/images');
 
-const imagePaths = {
-  outputDir: "_site/assets/imgs",
-  urlPath: "/assets/imgs",
-};
 
 /** Returns link tags for the site's favicon. */
 const body = async function (src) {
   const props = {
     widths: siteConfig.favicon.widths,
     formats: [siteConfig.favicon.format],
-    ...imagePaths,
+    outputDir: imagePaths.output,
+    urlPath: imageUrlPath,
   };
 
   const metadata = await Image(src, props);

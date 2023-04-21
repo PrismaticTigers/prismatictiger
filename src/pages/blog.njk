@@ -1,0 +1,11 @@
+---
+title: Blog
+permalink: /blog/
+icon: newspaper
+---
+
+  <h1>Post Archive</h1>
+{% set showYear = true %}
+{% set postslist = collections.posts %}
+
+{% include "postslist.njk" %}

@@ -1,0 +1,46 @@
+[
+  {
+    "logdate": "03/8/23",
+    "log": "I FINALLY ADDED MY BUTTON! I accidentally kept forgetting it hehe... plus some mobile layout fixes and tweaks, now it should hopefully look not trash on mobile!"
+  },
+  {
+    "logdate": "03/6/23",
+    "log": "Blog page is a WIP!! Some updates to that, as well as even more fixes because I'm crazy"
+  },
+  {
+    "logdate": "03/5/23",
+    "log": "Fixed mobile responsivness in \"Links\" page, minor fixes"
+  },
+  {
+    "logdate": "03/5/23",
+    "log": "Added more Zines + a new Figurine section in \"Graphics\" page, and a WIP blog page finally! (Gallery is in the works too!)"
+  },
+  {
+    "logdate": "03/4/23",
+    "log": "Layout fixes, added webring links because I forgot to do that before(oops.) Fixed nerdlistings & linklane button links"
+  },
+  {
+    "logdate": "01/30/23",
+    "log": "New page layout!"
+  },
+  {
+    "logdate": "12/24/22",
+    "log": "YET ANOTHER COMPLETE PAGE REVAMP, Added stamps & blinkies pages"
+  },
+  {
+    "logdate": "12/17/22",
+    "log": "Added img src tool, Removed index from sidenav (refresh does the same thing), Added }more to the homepage"
+  },
+  {
+    "logdate": "12/10/22",
+    "log": "New div layout preview, updated homepage text"
+  },
+  {
+    "logdate": "12/04/22",
+    "log": "COMPLETE LAYOUT REVAMP!!, Changed literally everything, Added more nav links, Fixed some links in Other Websites"
+  },
+  {
+    "logdate": "12/02/22",
+    "log": "Added a music player to the sidebar, Added more links to links out, Added more graphics to graphics"
+  }
+]

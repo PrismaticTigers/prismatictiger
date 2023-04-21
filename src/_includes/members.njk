@@ -1,0 +1,19 @@
+
+
+<div class="my-7">
+  {% for member in webring.sites %}
+    <ul class="list-none">
+      <li>
+        <div>
+     Owner: {{ member.name }}
+     </div>
+      <div>
+        Website: {{ member.link }}
+      </div>
+      <div>
+        Oddinaut: 
+      </div>
+      </li>
+    </ul>
+  {% endfor %}
+</div>

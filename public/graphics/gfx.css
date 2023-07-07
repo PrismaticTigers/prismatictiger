@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
 
 *::after,
 *,
@@ -10,15 +9,12 @@
 }
 
 body {
-  background: url("imgs/banners/989d96f2b7540f9d5b844fd9ce29bcd0.jpg");
+  background: url("imgs/manga/tumblr_mel22t6aNM1rgvmfqo1_1280.jpg");
   background-size: 500px;
   cursor: url(https://cur.cursors-4u.net/anime/ani-1/ani167.cur), auto;
   /* End https://www.cursors-4u.com */
   font-family: ms pgothic;
 }
-
-
-
 
 a {
   text-decoration: none;
@@ -66,10 +62,8 @@ button {
   cursor: pointer;
 }
 
-
 .topnav {
   display: flex;
-
 }
 
 .zines img,
@@ -81,6 +75,7 @@ button {
   height: 200px;
   width: 200px;
   object-fit: cover;
+  object-position: top;
   transition: transform 100ms ease;
 }
 
@@ -113,11 +108,12 @@ button {
   max-height: 800px;
 }
 
-.main-container>.grid {
-  border: 1px solid #000;
+.main-container > .grid {
   padding: 10px;
   margin-block: 10px;
-  box-shadow: 2px 3px 2px rgba(155, 119, 119, 0.63);
+  border-radius: 0.5em 0;
+  border: 4px double #f784c7;
+  box-shadow: 2px 2px 2px #9b949e;
 }
 
 .grid {
@@ -131,15 +127,14 @@ button {
 }
 
 .col-2 {
-
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url("imgs/zines/e08622dd247422b4f143318549610d7b.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)),
+    url("imgs/zines/e08622dd247422b4f143318549610d7b.jpg");
   background-position: center;
   background-size: cover;
   color: #ffeef7;
@@ -147,7 +142,6 @@ button {
   box-shadow: inset 2px 2px rgba(0, 0, 0, 0.336);
   text-shadow: 0 1px #333, 1px 0px #333, -1px 0px #333, 0px -1px #333,
     0 0 2px #333;
-
 }
 
 /* lightbox garbo */
@@ -211,14 +205,15 @@ button {
   display: flex;
   place-content: space-between;
   place-items: center;
-  background: linear-gradient(90deg,
-      rgb(255, 101, 165) 0%,
-      rgb(255, 244, 147) 35%,
-      rgb(143, 220, 255) 75%,
-      rgb(215, 114, 255) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 101, 165) 0%,
+    rgb(255, 244, 147) 35%,
+    rgb(143, 220, 255) 75%,
+    rgb(215, 114, 255) 100%
+  );
   padding: 5px;
 }
-
 
 /* win98 scrollbar */
 
@@ -244,9 +239,11 @@ button {
 ::-webkit-scrollbar-track {
   background-blend-mode: normal, difference, normal;
   background-size: 2px 2px;
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)),
+      rgba(255, 255, 255, 0.75)
+    ),
     linear-gradient(to right, black 50%, white 50%),
     linear-gradient(to bottom, black 50%, white 50%);
 }

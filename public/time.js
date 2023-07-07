@@ -1,6 +1,6 @@
 function showTime() {
     const days = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
-    const months = [ "Jan ", "Feb ", "Mar ", "Apr ", "Jun ", "Jul ", "Aug ", "Sept ", "Oct ", "Nov ", "Dec " ]
+    const months = [ "Jan ", "Feb ", "Mar ", "Apr ", "May ", "Jun ", "Jul ", "Aug ", "Sept ", "Oct ", "Nov ", "Dec " ];
     const d = new Date();
     let day = days[ d.getDay() ];
     let dt = d.getDate();

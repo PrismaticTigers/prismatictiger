@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap");
 
 *::after,
 *::before,
@@ -13,46 +14,28 @@ body {
   /* End https://www.cursors-4u.com */
   background: url("/images/backgrounds/chekdb.png");
   position: relative;
-  color: #16161d;
-  font-family: ms pgothic;
+  color: #424242;
+  font-family: ms ui gothic;
+
   overflow-x: hidden;
 }
 
-.webrings > div {
-  margin-top: 0.5rem;
+.plogo {
+  pointer-events: none;
+  filter: drop-shadow(0 0 1px #002fff);
 }
 
-.yw-widget-full {
-  color: white;
-  font-size: 1.3rem;
-  background: linear-gradient(
-      rgba(255, 86, 165, 1) 0%,
-      rgba(250, 250, 250, 0) 200%
-    ),
-    url("./graphics/imgs/banners/6253eb6f10357d784cd2e2d8d8c24853.jpg");
-  background-position: top left;
-  max-width: 250px;
-  padding: 1rem;
-  border: 1px solid #000;
-  text-align: center;
-  padding: 0.5rem;
+#statuscafe {
+  padding: 0.5em;
+  margin-block: 0.5rem;
+  background-color: #ffffee;
+  border: 1px solid #f784c7;
 }
-
-.yw-widget-full a {
-  color: #ff56a5;
-  text-shadow: 0 0 3px #16161d;
-  transition: 200ms ease-out;
-  position: relative;
+#statuscafe-username {
+  margin-bottom: 0.5em;
 }
-
-.yw-widget-full a:hover {
-  color: #55d4eb;
-  top: 3px;
-}
-
-.yw-widget-full .yw-body {
-  background: rgba(22, 22, 29, 0.623);
-  padding: 0.3rem;
+#statuscafe-content {
+  margin: 0 1em 0.5em 1em;
 }
 
 /* animations */
@@ -96,43 +79,23 @@ body {
   }
 }
 
-.run {
-  animation: run infinite 2s ease-in-out;
-}
-
-@keyframes run {
-  20%,
-  100% {
-    opacity: 0;
-    transform: translate(-400px, 0);
-  }
-
-  0% {
-    opacity: 0.5;
-  }
-
-  10% {
-    opacity: 1;
-  }
-
-  /* 0% {transform:translateX(0);}
-  50% {transform:translateX(30px);}
-  100% {transform:translateX(-500px);position:absolute;filter:opacity(0);} */
-}
-
-/* animations end */
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: Rowdies;
+  font-family: "Zen Maru Gothic", sans-serif;
   text-transform: capitalize;
   margin: 5px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1px;
+  color: #f784c7;
+  background-color: #ffffee;
+  border-radius: 0.5em 0;
+  border: 1px solid #f784c7;
+  box-shadow: 2px 2px 2px #9b949e;
+  padding: 5px;
 }
 
 ::selection {
@@ -161,58 +124,97 @@ li {
 
 a {
   text-decoration: none;
-  color: blue;
   cursor: url(https://cur.cursors-4u.net/food/foo-4/foo377.cur), pointer;
+  color: #f784c7;
+  font-family: ms ui gothic;
+  font-weight: bold;
 }
 
 a:active {
   color: hotpink;
 }
 
-.hr {
-  background: url("/images/dividers/85JJjUo.gif");
-  height: 5px;
+a:hover {
+  text-decoration: underline;
 }
 
-.sidebar a li {
-  border: 1px solid;
-  border-radius: 0.5em;
+.hr {
+  background-color: #0000ff;
+  height: 1px;
+}
+
+.hrimg {
+  display: block;
+  margin-inline: auto;
+  margin-block: 1em;
+}
+
+#sidebar {
+  display: flex;
+  gap: 1rem;
+  grid-area: sidebar;
+  background: url("/images/backgrounds/17a76e78_original.jpg");
+  background-size: cover;
+  text-align: center;
+  flex-direction: column;
+}
+
+.affies {
+  justify-self: flex-end;
+  align-self: flex-end;
+  color: #f784c7;
+  background-color: #ffffee;
+  border-radius: 0.5em 0;
+  border: 4px double #f784c7;
+  box-shadow: 2px 2px 2px #9b949e;
+  padding: 5px;
+  margin-top: 0.5rem;
+}
+
+#sidebar a li {
+  border-radius: 0.5em 0;
+  border: 1px solid #f784c7;
+  box-shadow: 2px 2px 2px #9b949e;
+  background: #ffffee;
+  margin: 5px 5px;
+  padding-inline: 0.5em;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 3px 5px;
-  padding: 2px;
-  background: skyblue;
   font-weight: bold;
 }
 
-.sidebar a li img {
+#sidebar li span {
+  margin-inline-end: 5px;
+}
+
+#sidebar a li img {
   margin-right: auto;
   height: 100%;
 }
 
-@media screen and (min-width: 900px) {
-  .sidebar a li:hover {
-    position: relative;
-    left: 3px;
-    cursor: url(https://cur.cursors-4u.net/food/foo-4/foo377.cur), pointer;
-    background: lightsteelblue;
-  }
+#sidebar a li:hover {
+  position: relative;
+  left: 5px;
+  cursor: url(https://cur.cursors-4u.net/food/foo-4/foo377.cur), pointer;
+}
+#sidebar li {
+  color: #f784c7;
 }
 
 .container {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(200px, 250px) 1fr minmax(200px, 250px);
+  grid-template-columns: minmax(300px, 350px) 1fr;
   grid-auto-flow: dense;
   gap: 5px;
   margin: 5px;
-  max-width: 1500px;
+  max-width: 1300px;
   grid-template-areas:
     "header header header"
     "marquee marquee  marquee"
-    "sidebar content right"
-    "sidebar daily right"
+    "sidebar content content"
+    "daily daily daily"
     "footer footer footer";
 }
 
@@ -230,30 +232,20 @@ a:active {
   } */
 
 .bubble {
-  background: #fff;
+  background: #ffffee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
-  position: absolute;
-  width: 300px;
-  left: 10px;
-  bottom: 105px;
-  align-self: start;
-  border-radius: 0.5em;
-  filter: drop-shadow(-1px 0px #000) drop-shadow(1px 1px #000)
-    drop-shadow(0px 2px 1px #888);
+  flex: 1;
+  border-radius: 0.5em 0;
+  border: 4px double #a684f7;
 }
 
-.bubble::after {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-right: 24px solid #fff;
-  border-left: 12px solid transparent;
-  border-top: 12px solid #fff;
-  border-bottom: 20px solid transparent;
-  right: -10px;
-  transform: rotate(-35deg);
-  bottom: -15px;
+.birthday {
+  text-align: center;
+  font-weight: bold;
 }
 
 .flex:not(.poke) {
@@ -265,14 +257,16 @@ a:active {
 .grid {
   padding: 5px;
   position: relative;
-  border: 1px solid #fff;
   outline: 1px solid #fff;
   outline-offset: -3px;
-  box-shadow: 2px 2px 1px #c5bcc7, inset 1px 1px 0 rgb(0, 0, 0);
+  border-radius: 0.5em 0;
+  border: 4px double #f784c7;
+  box-shadow: 2px 2px 2px #9b949e;
 }
 
 .poke {
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 .poke a {
@@ -283,29 +277,14 @@ a:active {
   grid-area: header;
   background-color: #55d4eb;
   min-height: 300px;
-  background: url("/images/backgrounds/wallhaven-w8emox.jpg");
-  background-position: 0 -17em;
+  background: url("/images/web/digicharat/tumblr_p9ccgfqBas1wpgehio1_1280.jpg");
+  background-position: 15rem -20rem;
   background-size: 1100px;
 }
 
 .marquee {
   grid-area: marquee;
-  background-color: lightcyan;
-}
-
-.sidebar {
-  grid-area: sidebar;
-  background: url("/images/backgrounds/ss098.jpg");
-  text-align: center;
-}
-
-.right {
-  grid-area: right;
-  background: #fff;
-}
-
-.right.flex {
-  justify-content: space-around;
+  background-color: hsl(170, 100%, 94%);
 }
 
 .content {
@@ -314,40 +293,28 @@ a:active {
 }
 
 .mid-manga {
-  background: url("./graphics/imgs/manga/60be24a48fea49d9df5fa433bf276d8e.png");
   display: flex;
-  flex-direction: column;
-  place-items: end;
+  justify-content: center;
+  align-items: center;
+}
+.dino {
+  width: 100%;
+  pointer-events: none;
 }
 
 .midtext {
   min-height: 250px;
   overflow: auto;
   flex-basis: 0;
-  border: 1px solid;
+  border-radius: 0.5em 0;
+  border: 4px double #a684f7;
+  box-shadow: 2px 2px 2px #9b949e;
 }
 
-.bun {
-  z-index: 1;
-  flex-basis: 0;
-  padding-top: 15px;
-}
-
-.bun:hover {
-  cursor: url(https://cur.cursors-4u.net/food/foo-4/foo377.cur), pointer;
-}
-
-#hehe {
-  flex: 0;
-  visibility: hidden;
-}
-
-.scroll {
-  overflow: auto;
-  max-height: 350px;
-  margin: 5px 0;
-  background: lightskyblue;
-  border: 1px solid;
+#bun {
+  align-self: center;
+  justify-self: flex-end;
+  width: 200px;
 }
 
 .daily {
@@ -356,12 +323,36 @@ a:active {
 }
 
 .daily-top {
-  border: 1px solid #16161d;
+  background-color: #ffffee;
+  border-radius: 0.5em 0;
+  border: 4px double #f784c7;
+  box-shadow: 2px 2px 2px #9b949e;
 }
 
-.daily-top .botscroll p {
-  max-height: 250px;
+.daily-top .botscroll {
+  max-height: 350px;
   overflow: auto;
+  margin-inline: 1rem;
+  flex: 5;
+}
+
+.flex-b {
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (min-width: 1300px) {
+  .flex-b {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.button {
+  text-align: center;
 }
 
 .daily .flex {
@@ -369,11 +360,6 @@ a:active {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.botscroll {
-  flex: 5;
-  text-align: center;
 }
 
 .grid.daily img.twirl {
@@ -484,7 +470,7 @@ a:active {
     flex: 1;
   }
 
-  .sidebar {
+  #sidebar {
     flex: 0;
   }
 
@@ -523,19 +509,14 @@ a:active {
 
   /* sidebar links */
 
-  .sidebar a:focus:after {
-    display: none;
-  }
-
-  .sidebar ul > li {
+  #sidebar ul li {
     padding: 10px 0;
-    background: #ffff66;
     margin: 2px 0;
     box-shadow: 1px 1px 2px #333;
     border: 1px solid;
   }
 
-  .sidebar a li {
+  #sidebar a li {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -553,7 +534,7 @@ a:active {
     height: 300px;
   }
 
-  .right img {
+  .right > * {
     display: none;
   }
 }

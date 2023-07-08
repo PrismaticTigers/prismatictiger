@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap");
 
 *::after,
 *,
@@ -13,7 +13,8 @@ body {
   background-size: 500px;
   cursor: url(https://cur.cursors-4u.net/anime/ani-1/ani167.cur), auto;
   /* End https://www.cursors-4u.com */
-  font-family: ms pgothic;
+  font-family: ms ui gothic;
+  letter-spacing: 1.2px;
 }
 
 a {
@@ -35,9 +36,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Rowdies;
+  font-family: "Zen Maru Gothic", sans-serif;
   letter-spacing: 2px;
   margin: 0;
+  font-weight: 600;
   text-transform: capitalize;
 }
 

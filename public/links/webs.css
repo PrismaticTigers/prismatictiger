@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap");
+
 *::after,
 *::before,
 * {
@@ -11,6 +13,7 @@ body {
   background: url("../images/backgrounds/rosie.gif");
   position: relative;
   color: #333;
+  letter-spacing: 1.2px;
   font-family: ms ui gothic;
   margin: 3px;
 }
@@ -37,10 +40,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "kosugi maru", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   text-transform: capitalize;
   margin: 5px 0;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1px;
   color: #f784c7;
   background-color: #ffffee;

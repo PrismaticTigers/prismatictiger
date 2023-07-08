@@ -16,7 +16,7 @@ body {
   position: relative;
   color: #424242;
   font-family: ms ui gothic;
-
+  letter-spacing: 1.2px;
   overflow-x: hidden;
 }
 

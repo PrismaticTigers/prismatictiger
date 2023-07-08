@@ -24,7 +24,8 @@ a {
 body {
   background: url("../images/backgrounds/original.jpg");
   background-position: 0 0;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
+  color: #424242;
   overflow-x: hidden;
   color: var(--text-col);
 }
@@ -100,6 +101,7 @@ ul.tool-list li {
     "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.6rem;
+  color: #737373;
 }
 
 .pic-desc {

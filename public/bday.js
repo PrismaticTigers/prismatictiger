@@ -23,6 +23,6 @@ var x = setInterval( function () {
   // If the count down is finished, write some text
   if ( distance < 0 ) {
     clearInterval( x );
-    document.getElementById( "bday" ).innerHTML = "EXPIRED";
+    document.getElementById( "bday" ).innerHTML = "HAPPY BIRTHDAY TO ME!!";
   }
 }, 1000 );

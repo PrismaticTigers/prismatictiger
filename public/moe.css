@@ -25,6 +25,16 @@ body {
   filter: drop-shadow(0 0 1px #002fff);
 }
 
+.cbox {
+  color: #f784c7;
+  background-color: #ffffee;
+  border-radius: 0.5em 0;
+  border: 4px double #f784c7;
+  box-shadow: 2px 2px 2px #9b949e;
+  padding: 5px;
+  margin-top: 0.5rem;
+}
+
 #statuscafe {
   padding: 0.5em;
   margin-block: 0.5rem;
@@ -160,8 +170,6 @@ a:hover {
 }
 
 .affies {
-  justify-self: flex-end;
-  align-self: flex-end;
   color: #f784c7;
   background-color: #ffffee;
   border-radius: 0.5em 0;
@@ -282,6 +290,10 @@ a:hover {
   background-size: 1100px;
 }
 
+.webrings {
+  flex: 1;
+}
+
 .marquee {
   grid-area: marquee;
   background-color: hsl(170, 100%, 94%);
@@ -292,10 +304,14 @@ a:hover {
   background: #ffffee;
 }
 
-.mid-manga {
+.mid-dino {
+  background: url("https://i.postimg.cc/jdX75CvX/222.gif");
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
 }
 .dino {
   width: 100%;
@@ -309,11 +325,12 @@ a:hover {
   border-radius: 0.5em 0;
   border: 4px double #a684f7;
   box-shadow: 2px 2px 2px #9b949e;
+  overflow-x: hidden;
 }
 
 #bun {
-  align-self: center;
-  justify-self: flex-end;
+  float: right;
+  position: relative;
   width: 200px;
 }
 
@@ -327,11 +344,14 @@ a:hover {
   border-radius: 0.5em 0;
   border: 4px double #f784c7;
   box-shadow: 2px 2px 2px #9b949e;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .daily-top .botscroll {
   max-height: 350px;
   overflow: auto;
+  min-width: 300px;
   margin-inline: 1rem;
   flex: 5;
 }
@@ -340,13 +360,13 @@ a:hover {
   margin: 1rem;
   display: flex;
   gap: 1rem;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 @media (min-width: 1300px) {
   .flex-b {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -536,5 +556,9 @@ a:hover {
 
   .right > * {
     display: none;
+  }
+
+  .twirl {
+    max-width: 300px;
   }
 }

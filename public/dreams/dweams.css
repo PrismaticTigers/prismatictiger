@@ -1,0 +1,132 @@
+:root {
+  --text-color: #161616;
+  --font-main: serif;
+  --font-scale: 1.1rem;
+  --width: 720px;
+}
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  background: url("../images/backgrounds/bgcueballs.gif");
+  display: flex;
+  justify-content: center;
+  cursor: url(https://cur.cursors-4u.net/games/gam-4/gam308.cur), auto !important;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-scale);
+  width: var(--width);
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  color: var(--text-color);
+}
+
+.post p {
+  text-indent: 0.5in;
+}
+
+a {
+  cursor: url(https://cur.cursors-4u.net/games/gam-4/gam307.ani),
+    url(https://cur.cursors-4u.net/games/gam-4/gam307.png) 5 5, auto !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.back {
+  text-align: right;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  font-family: sans-serif;
+  color: var(--heading-color);
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 1.45rem;
+}
+
+.post_wrapper {
+  background-color: hsl(265, 20%, 74%, 0.8);
+  border-radius: 0.5em 0;
+  border: 4px double #1400ca;
+  box-shadow: 2px 2px 2px #1e1e1f;
+  margin: 20px auto;
+  padding: 20px 40px;
+}
+
+blockquote {
+  margin-bottom: 2rem;
+  color: rgb(63, 31, 122);
+  margin-left: 0;
+  background-color: hsl(265, 20%, 60%, 0.7);
+  padding-left: 20px;
+  padding-block: 1rem;
+  border-left: 5px solid hsl(250, 55%, 42%);
+  border-bottom: 1px dashed;
+}
+
+h1.title {
+  font-size: 2em;
+}
+
+header {
+  padding-bottom: 0px;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed var(--text-color);
+}
+
+time {
+  font-style: italic;
+  font-size: var(--font-scale);
+  display: block;
+}
+
+.post time {
+  margin-bottom: 1rem;
+}
+
+ul#dreams {
+  list-style-type: none;
+  padding: unset;
+}
+
+ul#dreams li {
+  padding: 3px 8px;
+  background-color: hsl(265, 20%, 60%);
+  display: flex;
+  align-items: center;
+}
+
+ul#dreams li span {
+  flex: 0 0 120px;
+}

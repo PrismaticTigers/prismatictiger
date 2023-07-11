@@ -8,10 +8,10 @@ const dreams = [ {
 },
 {
   id: 2,
-  title: "Test Entry",
-  date: "10 Jul, 2023",
-  src: "2023/july/",
-  link: "blank-07-10-2023",
+  title: "Unfamiliar Identity",
+  date: "30 May, 2021",
+  src: "2021/may/",
+  link: "unfamiliar-identity-05-30-2021",
   tag: "dream"
 } ];
 

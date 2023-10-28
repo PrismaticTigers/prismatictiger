@@ -1,0 +1,196 @@
+:root {
+  --borders: 1px solid #f2bb7b;
+  --post-content: rgba(255, 255, 255, .7);
+  ;
+  --header: #afd3e2;
+  --text-col: #8b87b4;
+  --header-txt: #579bb1;
+}
+
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  cursor: url(http://cur.cursors-4u.net/games/gam-4/gam308.cur), default;
+}
+
+a {
+  cursor: help;
+}
+
+body {
+  background: url("../images/backgrounds/checktrans.gif");
+  background-color: #e9e1ff;
+  background-position: 0 0;
+  letter-spacing: 1.2px;
+  color: #424242;
+  overflow-x: hidden;
+  color: var(--text-col);
+}
+
+
+
+/* -------------- ARWORK SETTINGS ------------- */
+.pics .imgpic {
+  max-width: 100%;
+  height: 100%;
+
+}
+
+.pics img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pics img:hover {
+  object-fit: contain;
+  transform: scale(1.2);
+}
+
+.pics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: row dense;
+  align-items: flex-start;
+}
+
+/* ----- CONTENT STUFF ---- */
+
+
+:is(p, span) {
+  font-family: Verdana, Geneva, Tahoma, sans-serif "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #737373;
+}
+
+hr {
+  border: none;
+  border-bottom: var(--text-col) solid 1px;
+  margin-block: 0.5em;
+}
+
+.date {
+  font-weight: bold;
+  text-align: right;
+  display: block;
+}
+
+::selection {
+  background-color: #ffabe1;
+  color: #16161d;
+}
+
+/* --------- GRID --------- */
+
+.grid-container {
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 0.5rem;
+  padding: 1em;
+}
+
+.flex {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.header-content.flex {
+  justify-content: start;
+  align-items: center;
+}
+
+
+.box.main {
+  border: var(--borders);
+}
+
+.box {
+  border-radius: 0.5ch;
+}
+
+.box:where(.main, .footer) {
+  background: var(--post-content);
+  border: var(--borders);
+  box-shadow: 3px 3px 1px 0 #16161d75;
+  outline: 1px solid #fff;
+}
+
+.box:where(.header, .sidebar) {
+  padding: 0.5em;
+}
+
+.sidebar {
+  flex: 22%;
+}
+
+.sidebar :is(h1, h2, h3) {
+  margin-block: 0.5em;
+}
+
+@font-face {
+  font-family: bohemian;
+  src: url(https://dl.dropbox.com/s/h1893p3fu9ecwsx/Bohemian%20Soul.otf);
+}
+
+:is(h1, h2, h3) {
+  font-family: bohemian;
+  font-weight: normal;
+}
+
+
+.header {
+  color: var(--text-col);
+  background-color: rgba(255, 255, 255, .7);
+  box-shadow: 3px 3px 1px 0 #16161d75;
+  outline: 1px solid #fff;
+}
+
+.header img {
+  width: 100px;
+}
+
+.header .rainbow {
+  border-radius: 50ch;
+  width: 100%;
+  background: linear-gradient(90deg,
+      rgba(255, 115, 233, 1) 0%,
+      rgba(255, 241, 132, 1) 50%,
+      rgba(118, 229, 255, 1) 100%);
+  height: 5px;
+}
+
+header,
+footer {
+  border: var(--borders);
+  grid-column: 1/-1;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .content,
+  .sidebar {
+    flex: 100%;
+  }
+
+  .box {
+    max-height: 100%;
+  }
+}

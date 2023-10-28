@@ -22,7 +22,7 @@ a {
 }
 
 body {
-  background: url("../images/backgrounds/original.jpg");
+  background: url("../images/backgrounds/checkr.png");
   background-position: 0 0;
   letter-spacing: 1.2px;
   color: #424242;
@@ -68,6 +68,7 @@ ul.tool-list li {
   height: auto;
   object-fit: cover;
 }
+
 .pic-src {
   overflow: hidden;
   max-width: 700px;
@@ -75,6 +76,7 @@ ul.tool-list li {
 }
 
 .pic-wrap {
+  width: 800px;
   margin-bottom: 2rem;
   background-color: #fff;
   padding: 1em;
@@ -92,10 +94,12 @@ ul.tool-list li {
 /* ----- CONTENT STUFF ---- */
 
 .pic-title {
-  margin-block: 1em;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
   max-width: 700px;
   margin-inline: auto;
 }
+
 :is(p, span) {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -151,7 +155,7 @@ hr {
 
 .content {
   background: linear-gradient(hsla(0, 100%, 94%, 0.8), hsla(0, 100%, 94%, 0.5)),
-    url("http://25.media.tumblr.com/tumblr_mbj7fgpGXv1qd0n4ao4_250.png");
+    url("/images/backgrounds/bgbluewh.jpg");
   background-size: repeat;
   display: flex;
 
@@ -175,6 +179,7 @@ hr {
   box-shadow: 3px 3px 1px 0 #16161d75;
   outline: 1px solid #fff;
 }
+
 .box:where(.header, .sidebar) {
   padding: 0.5em;
 }
@@ -191,6 +196,7 @@ hr {
   font-family: bohemian;
   src: url(https://dl.dropbox.com/s/h1893p3fu9ecwsx/Bohemian%20Soul.otf);
 }
+
 :is(h1, h2, h3) {
   font-family: bohemian;
   font-weight: normal;
@@ -207,12 +213,10 @@ hr {
 
 .header {
   color: var(--text-col);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 210, 248, 1) 0%,
-    rgba(255, 248, 197, 1) 50%,
-    rgba(189, 242, 255, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 210, 248, 1) 0%,
+      rgba(255, 248, 197, 1) 50%,
+      rgba(189, 242, 255, 1) 100%);
   box-shadow: 3px 3px 1px 0 #16161d75;
   outline: 1px solid #fff;
 }
@@ -224,12 +228,10 @@ hr {
 .header .rainbow {
   border-radius: 50ch;
   width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 115, 233, 1) 0%,
-    rgba(255, 241, 132, 1) 50%,
-    rgba(118, 229, 255, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 115, 233, 1) 0%,
+      rgba(255, 241, 132, 1) 50%,
+      rgba(118, 229, 255, 1) 100%);
   height: 5px;
 }
 
@@ -247,10 +249,12 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+
   .content,
   .sidebar {
     flex: 100%;
   }
+
   .box {
     max-height: 100%;
   }

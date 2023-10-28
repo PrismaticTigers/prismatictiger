@@ -35,15 +35,28 @@ body {
   margin-top: 0.5rem;
 }
 
+#statuscafe-pfp {
+  background: url("https://i.postimg.cc/bYDQ4rbt/photo-2022-09-26-11-50-44.jpg");
+  width: 100px;
+  height: 100px;
+  border: 1px solid #f784c7;
+  background-size: contain;
+  float: left;
+  margin-right: 1rem;
+
+}
+
 #statuscafe {
   padding: 0.5em;
   margin-block: 0.5rem;
   background-color: #ffffee;
   border: 1px solid #f784c7;
 }
+
 #statuscafe-username {
   margin-bottom: 0.5em;
 }
+
 #statuscafe-content {
   margin: 0 1em 0.5em 1em;
 }
@@ -206,6 +219,7 @@ a:hover {
   left: 5px;
   cursor: url(https://cur.cursors-4u.net/food/foo-4/foo377.cur), pointer;
 }
+
 #sidebar li {
   color: #f784c7;
 }
@@ -285,8 +299,8 @@ a:hover {
   grid-area: header;
   background-color: #55d4eb;
   min-height: 300px;
-  background: url("/images/web/digicharat/tumblr_p9ccgfqBas1wpgehio1_1280.jpg");
-  background-position: 15rem -20rem;
+  background: url("/images/backgrounds/wallhaven-rdrxkm.jpg");
+  background-position: 15rem -15rem;
   background-size: 1100px;
 }
 
@@ -296,7 +310,11 @@ a:hover {
 
 .marquee {
   grid-area: marquee;
-  background-color: hsl(170, 100%, 94%);
+  background-color: hsl(282, 100%, 96%);
+}
+
+.marquee img {
+  vertical-align: bottom;
 }
 
 .content {
@@ -307,21 +325,51 @@ a:hover {
 .mid-dino {
   background: url("https://i.postimg.cc/jdX75CvX/222.gif");
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
+  height: 300px;
   background-size: cover;
   background-position: center;
 }
+
 .dino {
   width: 100%;
   pointer-events: none;
 }
 
+.rightrow {
+  max-width: 260px;
+}
+
+.todo {
+  margin-top: 1rem;
+
+  border-radius: 0.5em 0;
+  border: 4px double #a684f7;
+  box-shadow: 2px 2px 2px #9b949e;
+  height: 200px;
+
+}
+
+ul.todolist {
+  margin-block: .5em;
+  padding-left: 1.5em;
+  list-style: disc;
+  overflow: auto;
+  max-height: 135px;
+
+}
+
+.introrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: .5rem;
+}
+
+
 .midtext {
+  max-width: 630px;
   min-height: 250px;
   overflow: auto;
-  flex-basis: 0;
   border-radius: 0.5em 0;
   border: 4px double #a684f7;
   box-shadow: 2px 2px 2px #9b949e;
@@ -394,7 +442,8 @@ a:hover {
   padding-inline: 1rem;
   font-weight: bold;
   grid-area: footer;
-  background: url("/images/backgrounds/clwocwl.jpg");
+  background: url("/images/backgrounds/rbowlinebg.gif");
+  background-position: 0 10px;
 }
 
 /* win98 scrollbar */
@@ -421,11 +470,9 @@ a:hover {
 ::-webkit-scrollbar-track {
   background-blend-mode: normal, difference, normal;
   background-size: 2px 2px;
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ),
+      rgba(255, 255, 255, 0.75)),
     linear-gradient(to right, black 50%, white 50%),
     linear-gradient(to bottom, black 50%, white 50%);
 }
@@ -474,7 +521,18 @@ a:hover {
   background-image: url("data:image/svg+xml,%3Csvg transform='rotate(90)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6.86 6.86'%3E%3Cpath fill='%231d1d1b' d='M4.41 2.94v-.98h-.98V.98h-.98V0h-.98V6.86h.98v-.98h.98V4.9h.98v-.98h.98v-.98h-.98z'/%3E%3C/svg%3E");
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
+
+  .rightrow {
+    display: flex;
+    max-width: 500px;
+    column-gap: 1rem;
+  }
+
+  .todo {
+    width: 260px;
+  }
+
   .container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:

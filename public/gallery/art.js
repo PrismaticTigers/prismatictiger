@@ -47,6 +47,13 @@ const pics = [
     src: "artwork/2023/fanart/mortymort.png",
     date: "June 20, 2023",
     desc: "A friend of mine loves the creator of 8:11 (dubuk)'s characters, and they yet again commissioned me for art of them! ☆⌒(*＾-゜)v"
+  },
+  {
+    id: 8,
+    title: "Nes",
+    date: "July 3, 2023",
+    src: "artwork/2023/original/neslight.png",
+    desc: "description"
   }
 ];
 

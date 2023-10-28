@@ -1,0 +1,93 @@
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+html,
+body {
+  cursor: url(https://cur.cursors-4u.net/food/foo-4/foo368.cur), default;
+  /* End https://www.cursors-4u.com */
+  background: url("/images/backgrounds/checktrans.gif");
+  background-color: #ffc9e2;
+  color: #424242;
+  font-family: ms ui gothic;
+  letter-spacing: 1.2px;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  margin-inline: auto;
+  max-width: 1500px;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  display: grid;
+  height: 100%;
+  gap: 5px;
+  margin-block: 5px;
+  margin-left: 320px;
+  margin-right: 1rem;
+}
+
+.posts {
+  min-width: 100%;
+}
+
+.date {
+  background-color: #fae9a0;
+  padding-inline: .3em;
+  display: inline-block;
+}
+
+.posts header {
+  margin-bottom: 1em;
+}
+
+.posts p:not(:last-of-type) {
+  margin-bottom: 1em;
+  text-indent: .5in;
+}
+
+.posts .entry:not(:last-of-type) {
+  margin-bottom: 1em;
+}
+
+.grid {
+  padding: 1em;
+  outline: 1px solid #fff;
+  background: #ffffee;
+  outline-offset: -3px;
+  border-radius: 0.5em 0;
+  border: 4px double #f7bc84;
+  box-shadow: 2px 2px 2px #9b949e;
+
+}
+
+.grid:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  outline: 1px solid #fff;
+  background: #ffffee;
+  outline-offset: -3px;
+  border-radius: 0.5em 0;
+  border: 4px double #9584f7;
+  box-shadow: 2px 2px 2px #9b949e;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+.sidebar {
+  background-color: #fff;
+  position: fixed;
+  width: 300px;
+  height: 100dvh;
+  float: left;
+}

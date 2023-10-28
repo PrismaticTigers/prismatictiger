@@ -432,7 +432,7 @@ ul.todolist {
 
 .grid.daily img.twirl {
   /* max-height: 100%;
-  width: fit-content; */
+  width: fit-content;*/
   flex: 1;
 }
 

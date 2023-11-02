@@ -106,6 +106,7 @@ input[type="submit"] {
         <p>Please check only one at a time or else it won't work!</p>
             <br>
             <label>Image tag? </label> <input type="checkbox" id="imgtag"><br><label>Neocities url? </label><input type="checkbox" id="nc"><br><label>JUST url? </label><input type="checkbox" id="justurl"><br>
+            <label>Image link? </label><input type="checkbox" id="imglink"><br>
             Directory:
             <input id="dir" type="text" autocomplete="off" />
             Additional:
@@ -127,6 +128,7 @@ input[type="submit"] {
             var imgtag = document.getElementById("imgtag");
             var neolink = document.getElementById("nc");
             var url = document.getElementById("justurl");
+            var imglink = document.getElementById("imglink")
             var txt = "";
             if ('submit') {
                 if (x.files.length == 0) {
@@ -137,7 +139,8 @@ input[type="submit"] {
                     var web = removeExtension(file.name);
                     if (imgtag.checked) {
                         txt += output.innerHTML = '<img src="' + dir + file.name + '"'+ extra + '>' + '\n'; } else if (neolink.checked) {
-                            txt += output.innerHTML = '<a href="https://' + web + '.neocities.org/"> ' + '<img src="' + dir + file.name + '"'+ extra + '>' + '</a> \n';}else if (url.checked) {
+                            txt += output.innerHTML = '<a href="https://' + web + '.neocities.org/"> ' + '<img src="' + dir + file.name + '"'+ extra + '>' + '</a> \n';} else if (imglink.checked) {
+                            txt += output.innerHTML = '<a href="' + dir + file.name + '">' + '<img src="' + dir + file.name + '"'+ extra + '>' + '</a> \n';}else if (url.checked) {
                                 txt += output.innerHTML = 'https://' + web + '.neocities.org/' + '\n';
                             }
                             

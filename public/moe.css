@@ -12,7 +12,8 @@ html,
 body {
   cursor: url(https://cur.cursors-4u.net/food/foo-4/foo368.cur), default;
   /* End https://www.cursors-4u.com */
-  background: url("/images/backgrounds/chekdb.png");
+  background: url("/images/backgrounds/checktrans.gif");
+  background-color: rgb(204, 228, 255);
   position: relative;
   color: #424242;
   font-family: ms ui gothic;
@@ -265,6 +266,10 @@ a:hover {
   border: 4px double #a684f7;
 }
 
+.footlinks {
+  text-align: center;
+}
+
 .birthday {
   text-align: center;
   font-weight: bold;
@@ -299,9 +304,10 @@ a:hover {
   grid-area: header;
   background-color: #55d4eb;
   min-height: 300px;
-  background: url("/images/backgrounds/wallhaven-rdrxkm.jpg");
-  background-position: 15rem -15rem;
-  background-size: 1100px;
+  background: url("/images/backgrounds/Lucky-Star-2-e1586867952248.png");
+  background-position: 0 -7em;
+  background-size: 1300px;
+
 }
 
 .webrings {
@@ -325,7 +331,7 @@ a:hover {
 .mid-dino {
   background: url("https://i.postimg.cc/jdX75CvX/222.gif");
   display: flex;
-  height: 300px;
+  height: 420px;
   background-size: cover;
   background-position: center;
 }
@@ -363,6 +369,12 @@ ul.todolist {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: .5rem;
+}
+
+.sitemap :is(h2, h3) {
+  border: none;
+  box-shadow: none;
+
 }
 
 
@@ -579,11 +591,7 @@ ul.todolist {
     flex-direction: column;
   }
 
-  .header {
-    height: 300px;
-    background-size: 800px;
-    background-position: 0 -10em;
-  }
+
 
   /* sidebar links */
 
